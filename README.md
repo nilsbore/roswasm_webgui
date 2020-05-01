@@ -1,6 +1,7 @@
 # roswasm_webgui
 
-roswasm_webgui is a library for writing web GUIs for ROS using [roswasm](https://github.com/nilsbore/roswasm).
+roswasm_webgui is a library for writing web GUIs for ROS using [roswasm](https://github.com/nilsbore/roswasm)
+and [imgui](https://github.com/ocornut/imgui).
 It also provides example web interfaces, one of which is used for our [underwater robot](https://github.com/smarc-project).
 The resulting web pages are built using wasm and have been tested using Chrome and Firefox.
 
