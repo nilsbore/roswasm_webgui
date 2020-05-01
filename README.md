@@ -49,9 +49,13 @@ the network at the address `1.2.3.4:8080`.
 
 ## *NOT NEEDED FOR RUNNING!* Building the packages
 
-First off, you need to get the roswasm submodule by typing `git submodule init --update` within this folder.
+To build the wasm files that are served by this package, you need to download,
+activate and source the [emscripten sdk](https://emscripten.org/docs/getting_started/downloads.html#installation-instructions). The code has been tested with version `1.39.10` of emscripten.
+
+Then, you need to get the roswasm submodule by typing `git submodule init --update` within this folder.
 If you just want to build the example with `std_msgs`, simply
 build it inside this folder by typing `make`. For the AUV
 specific page, you need to also clone [sam_common](https://github.com/smarc-project/sam_common)
 and build the package, and also replace the hardcoded include
 path in the [make file](https://github.com/nilsbore/roswasm_webgui/blob/master/Makefile).
+To build the AUV specific file, type `make sam`.
