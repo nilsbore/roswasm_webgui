@@ -39,8 +39,8 @@ Then compile that aswell as this package within the catkin workspace, source and
 roslaunch roswasm_webgui sam_webgui.launch
 ```
 Then navigate to `localhost:8080` to the see the webpage.
-If you want the page to be accessible from another computer
-with IP 1.2.3.4, you have to provide another parameter:
+If you want the page on computer with  IP `1.2.3.4` to be accessible from
+another computer on the network, you have to provide another parameter:
 ```
 roslaunch roswasm_webgui sam_webgui.launch rosbridge_ip:=1.2.3.4
 ```
