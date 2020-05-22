@@ -53,8 +53,8 @@ Then compile that aswell as this package within the catkin workspace, source and
 roslaunch roswasm_webgui sam_webgui.launch namespace:=sam1
 ```
 Then navigate to `localhost:8080` to the see the webpage.
-If you want the page on computer with  IP `1.2.3.4` to be accessible from
-another computer on the network, you have to provide another parameter:
+If you want the page on SAM's computer(the jetson/xavier) with  IP `1.2.3.4`(this is SAM's IP) to be accessible from
+another computer(this is the computer on your lap) on the network, you have to provide another parameter:
 ```
 roslaunch roswasm_webgui sam_webgui.launch rosbridge_ip:=1.2.3.4 namespace:=sam1
 ```
